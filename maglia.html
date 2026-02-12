@@ -11,48 +11,45 @@
 
 body {
     margin: 0;
-    background: #ffffff;
+    background: #f5f5f5;
     color: #111;
     font-family: 'Inter', sans-serif;
 }
 
-/* HEADER BRAND */
-.header {
-    padding: 80px 10% 40px;
+/* CONTENITORE */
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 60px 20px 70px;
 }
 
+/* BRAND */
 .brand {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 42px;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
+    font-size: 34px;
+    margin-bottom: 3px;
 }
 
 .motto {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 4px;
     color: #777;
+    margin-bottom: 50px;
 }
 
-/* HERO TYPO */
+/* FRASE PRINCIPALE */
 .hero {
-    padding: 60px 10% 20px;
-}
-
-.hero h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 56px;
-    font-weight: 500;
-    line-height: 1.1;
-    max-width: 800px;
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 50px;
 }
 
-/* IMAGE SECTION */
+/* IMMAGINE */
 .image-wrap {
-    padding: 100px 10%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .image-wrap img {
@@ -60,51 +57,49 @@ body {
     max-width: 520px;
 }
 
-/* CONTENT SECTION */
+/* TESTO */
 .content {
-    padding: 0 10% 120px;
-    max-width: 700px;
-}
-
-.content p {
-    font-size: 18px;
-    line-height: 1.9;
+    font-size: 17px;
+    line-height: 1.8;
     color: #333;
-    margin-bottom: 25px;
 }
 
-/* VALUES TYPOGRAPHY */
 .values {
-    margin: 60px 0;
+    margin-top: 35px;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 2;
 }
 
-/* CTA */
-.cta a {
-    text-decoration: none;
-    font-size: 14px;
+/* LINK HOME */
+.back-home {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 13px;
     letter-spacing: 2px;
-    text-transform: uppercase;
+}
+
+.back-home a {
+    text-decoration: none;
+    color: #111;
     border-bottom: 1px solid #111;
     padding-bottom: 4px;
-    color: #111;
     transition: opacity 0.3s ease;
 }
 
-.cta a:hover {
+.back-home a:hover {
     opacity: 0.5;
 }
 
-@media (max-width: 900px) {
+/* MOBILE */
+@media (max-width: 768px) {
 
-    .hero h1 {
-        font-size: 38px;
+    .hero {
+        font-size: 28px;
     }
 
-    .values {
-        font-size: 22px;
+    .image-wrap img {
+        max-width: 100%;
     }
 
 }
@@ -114,44 +109,42 @@ body {
 
 <body>
 
-<div class="header">
+<div class="container">
+
     <div class="brand">Team Cucchiara</div>
     <div class="motto">Silence. Run.</div>
-</div>
 
-<div class="hero">
-    <h1>
+    <div class="hero">
         La maglia non è un premio.<br>
         È una scelta.
-    </h1>
-</div>
-
-<div class="image-wrap">
-    <img src="images/shirt.png" alt="Maglia Team Cucchiara">
-</div>
-
-<div class="content">
-
-    <p>
-        La maglia ufficiale del Team Cucchiara viene consegnata
-        a chi decide di intraprendere un percorso strutturato
-        nel Running Coaching per un minimo di tre mesi.
-    </p>
-
-    <p>
-        Non rappresenta un traguardo, ma un impegno.
-        Un segno visibile di costanza, disciplina e passione.
-    </p>
-
-    <div class="values">
-        Impegno.<br>
-        Costanza.<br>
-        Disciplina.<br>
-        Passione.
     </div>
 
-    <div class="cta">
-        <a href="index.html">Torna alla Home Page</a>
+    <div class="image-wrap">
+        <img src="images/shirt.png" alt="Maglia Team Cucchiara">
+    </div>
+
+    <div class="content">
+        <p>
+            La maglia ufficiale del Team Cucchiara viene consegnata
+            a chi sceglie di intraprendere un percorso strutturato
+            nel Running Coaching per un minimo di tre mesi.
+        </p>
+
+        <p>
+            Non rappresenta un traguardo, ma un impegno.
+            Un segno visibile di costanza, disciplina e passione.
+        </p>
+
+        <div class="values">
+            Impegno.<br>
+            Costanza.<br>
+            Disciplina.<br>
+            Passione.
+        </div>
+    </div>
+
+    <div class="back-home">
+        <a href="index.html">← Ritorna alla Home</a>
     </div>
 
 </div>
