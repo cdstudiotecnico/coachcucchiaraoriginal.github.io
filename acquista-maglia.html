@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Richiesta Maglia Neutra — Silence. Run.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    background: #f6f6f6;
+    font-family: 'Inter', sans-serif;
+    color: #111;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 20px 90px;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.image-wrap {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.image-wrap img {
+    max-width: 420px;
+    width: 100%;
+}
+
+form {
+    display: grid;
+    gap: 18px;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button {
+    padding: 14px;
+    background: #111;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.success-message {
+    margin-top: 20px;
+    color: #2e7d32;
+    display: none;
+    font-size: 15px;
+}
+
+.back-home {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.back-home a {
+    text-decoration: none;
+    color: #111;
+    border-bottom: 1px solid #111;
+    padding-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 26px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Richiesta Maglia Neutra — Silence. Run.</h1>
+
+<div class="description">
+Compila il modulo sottostante per ricevere maggiori informazioni.
+Verrai ricontattato personalmente per le modalità di pagamento e spedizione.
+</div>
+
+<div class="image-wrap">
+    <img src="images/shirt-neutra.PNG" alt="Maglia Neutra Silence Run">
+</div>
+
+<form id="orderForm">
+
+    <input type="text" name="nome" placeholder="Nome e Cognome" required>
+    <input type="text" name="cf" placeholder="Codice Fiscale" required>
+    <input type="text" name="residenza" placeholder="Indirizzo Residenza (Via, Numero Civico, CAP, Città)" required>
+    <input type="text" name="spedizione" placeholder="Indirizzo Spedizione" required>
+
+    <select name="taglia" required>
+        <option value="">Seleziona Misura Maglia</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+    </select>
+
+    <input type="number" name="quantita" placeholder="Quantità Maglie" min="1" required>
+    <input type="tel" name="telefono" placeholder="Contatto Telefonico" required>
+    <input type="email" name="email" placeholder="E-mail" required>
+
+    <button type="submit">Invia Richiesta</button>
+
+</form>
+
+<div class="success-message" id="successMessage">
+Messaggio inviato. Verrai ricontattato al più presto.
+</div>
+
+<div class="back-home">
+    <a href="index.html">← Ritorna alla Home</a>
+</div>
+
+</div>
+
+<script>
+document.getElementById("orderForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let form = this;
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+    }
+
+    let data = new FormData(form);
+    let body = "";
+    data.forEach((value, key) => {
+        body += key + ": " + value + "%0D%0A";
+    });
+
+    window.location.href = "mailto:coach.cucchiara@hotmail.com?subject=Richiesta Maglia Neutra&body=" + body;
+
+    document.getElementById("successMessage").style.display = "block";
+    form.reset();
+});
+</script>
+
+</body>
+</html>
