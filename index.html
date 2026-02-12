@@ -741,9 +741,20 @@ Coach Cucchiara
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+<script>
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+
+    window.onload = function () {
+        window.scrollTo(0, 0);
+    };
+</script>
+    
 </body>
 
 </html>
+
 
 
 
