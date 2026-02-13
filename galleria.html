@@ -6,188 +6,189 @@
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-TDC4FVDX');</script>
   <!-- End Google Tag Manager -->
 
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Galleria – Gare e Viaggio | Dario Cucchiara</title>
-  <meta name="description" content="Galleria delle gare, eventi e momenti di viaggio vissuti da Dario Cucchiara con la sua famiglia e la passione per la corsa.">
-  <meta name="author" content="Dario Cucchiara">
-  <meta name="robots" content="index, follow">
-  <meta name="keywords" content="gare, running, viaggio, famiglia, eventi, foto, running coach">
-  <link rel="canonical" href="https://www.cdstudiotecnico.it/galleria.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galleria – Gare & Viaggio | Dario Cucchiara</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <!-- Font del tuo sito -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Fonts e CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <style>
+
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #f4f7f6;
-      color: #333;
       margin: 0;
-      padding: 0;
+      background: #0f0f0f;
+      font-family: 'Cormorant Garamond', serif;
+      color: #ffffff;
     }
 
-    /* Contenitore principale */
-    .page-wrapper {
-      background: #fff;
-      border-radius: 12px;
+    /* CONTENITORE CENTRALE */
+    .gallery-page {
       max-width: 900px;
-      margin: 60px auto;
-      padding: 40px;
-      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Titolo della galleria */
-    .section-title {
+      margin: 80px auto;
+      padding: 0 20px;
       text-align: center;
-      margin-bottom: 30px;
     }
 
-    .section-title h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #356c6c;
-      margin-bottom: 10px;
+    h1 {
+      font-weight: 500;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
     }
 
-    .section-title p {
-      font-size: 1rem;
-      color: #555;
+    .subtitle {
+      opacity: 0.7;
+      margin-bottom: 50px;
+      font-size: 1.1rem;
     }
 
-    /* Contenitore scorrevole */
-    .gallery-wrapper {
-      display: flex;
-      overflow-x: scroll;
-      scroll-behavior: smooth;
-      gap: 15px;
-      padding-bottom: 20px;
-    }
-
-    .gallery-wrapper::-webkit-scrollbar {
-      height: 8px;
-    }
-
-    .gallery-wrapper::-webkit-scrollbar-thumb {
-      background-color: rgba(53, 108, 108, 0.6);
-      border-radius: 10px;
-    }
-
-    .gallery-wrapper::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    /* Immagini della galleria */
-    .gallery-item {
-      min-width: 300px;
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.5s ease;
-    }
-
-    .gallery-item img {
+    /* RIQUADRO SLIDER */
+    .swiper {
       width: 100%;
-      height: auto;
-      border-radius: 8px;
+      max-width: 800px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
     }
 
-    .gallery-item:hover {
-      transform: scale(1.05);
+    .swiper-slide img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      display: block;
     }
 
+    /* DIDASCALIA */
     .caption {
-      background: rgba(255, 255, 255, 0.7);
-      text-align: center;
-      padding: 10px;
+      background: #111;
+      padding: 20px;
       font-size: 1rem;
-      color: #444;
-      font-style: italic;
-      border-top: 1px solid #eee;
+      letter-spacing: 0.5px;
     }
 
-    /* Pulsante per tornare alla home */
-    .back-btn {
+    /* FRECCE */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #ffffff;
+    }
+
+    /* PAGINATION */
+    .swiper-pagination-bullet {
+      background: #ffffff;
+      opacity: 0.4;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+
+    /* BOTTONE STILE TUO */
+    .home-btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 12px 30px;
-      background-color: #356c6c;
-      color: #fff;
-      border-radius: 30px;
+      margin-top: 50px;
+      padding: 12px 40px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
       text-decoration: none;
-      text-align: center;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      transition: 0.3s ease;
     }
 
-    .back-btn:hover {
-      background-color: #2a5656;
+    .home-btn:hover {
+      background: #ffffff;
+      color: #000000;
     }
 
-    /* Mobile */
-    @media (max-width: 768px) {
-      .gallery-wrapper {
-        gap: 10px;
-      }
-
-      .gallery-item {
-        min-width: 200px;
+    /* MOBILE */
+    @media(max-width:768px){
+      .swiper-slide img{
+        height: 350px;
       }
     }
+
   </style>
 
 </head>
 
 <body>
 
-  <!-- Google Tag Manager noscript -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDC4FVDX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
+  <div class="gallery-page">
 
-  <!-- Contenuto della pagina -->
-  <div class="page-wrapper" data-aos="fade-up">
-
-    <div class="section-title">
-      <img src="assets/img/logo.png" alt="Logo">
-      <h2>Gare & Viaggi</h2>
-      <p>Segui il mio viaggio e le gare che ho corso in Europa e Italia, unendo passione, famiglia e sport.</p>
+    <h1>Gare & Viaggio</h1>
+    <div class="subtitle">
+      Ogni gara è un viaggio. Ogni viaggio è una storia condivisa.
     </div>
 
-    <!-- Galleria -->
-    <div class="gallery-wrapper">
-      <div class="gallery-item">
-        <img src="images/Valencia.jpg" alt="Gara 1">
-        <div class="caption">Maratona di Valencia, un'esperienza unica di sport e storia.</div>
+    <!-- SLIDER -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="images/Valencia.jpg" alt="Valencia">
+          <div class="caption">
+            Valencia Half Marathon — Una delle mezze più veloci d’Europa.
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/Europei1.JPG" alt="Europei">
+          <div class="caption">
+            Campionati Europei Master — Orgoglio e disciplina.
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/Europei2.JPG" alt="Europei">
+          <div class="caption">
+            Correre in Nazionale è un’emozione che resta dentro.
+          </div>
+        </div>
+
       </div>
-      <div class="gallery-item">
-        <img src="images/Europei1.JPG" alt="Gara 2">
-        <div class="caption">La maratona di Barcellona, attraversando la città simbolo della passione sportiva.</div>
-      </div>
-      <div class="gallery-item">
-        <img src="images/Europei2.JPG" alt="Gara 3">
-        <div class="caption">Madrid, un'ultramaratona immersa nella cultura e nell'energia della capitale.</div>
-      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
     </div>
 
-    <!-- Pulsante per tornare alla home -->
-    <div class="text-center">
-      <a href="index.html" class="back-btn">← Torna alla Home</a>
-    </div>
+    <a href="index.html" class="home-btn">TORNA ALLA HOME</a>
 
   </div>
 
-</body>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      effect: "slide",
+      grabCursor: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      speed: 900,
+    });
+  </script>
+
+</body>
 </html>
