@@ -4502,6 +4502,13 @@ td:last-child {
     left: 50%; /* Centra orizzontalmente */
     transform: translateX(-50%); /* Aggiunge il centraggio perfetto */
     z-index: 1000; /* Assicura che le icone siano sopra altri elementi */
+    transition: opacity 0.3s ease; /* Transizione per effetto scomparsa */
+}
+
+/* Rende invisibile le icone social quando non devono essere visibili */
+.s-intro__social.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* Styling delle icone social */
