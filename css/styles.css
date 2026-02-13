@@ -4596,3 +4596,23 @@ html {
         border-radius: 8px;
     }
 }
+
+    /* ==================================================
+   GALLERIA: Uniformare le immagini
+================================================== */
+
+/* Garantiamo una dimensione uniforme per le immagini della galleria */
+.entry__thumb {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Altezza fissa per tutte le immagini */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.entry__thumb img {
+    object-fit: cover; /* Impedisce la distorsione dell'immagine */
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
