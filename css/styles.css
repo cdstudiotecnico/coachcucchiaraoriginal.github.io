@@ -4553,3 +4553,46 @@ html {
 .coach-location a:hover {
     border-bottom: 1px solid #ffffff;
 }
+
+   
+
+    
+/* Adattamento responsivo e miglioramento estetico */
+.glides {
+    width: 100%;
+    height: auto;
+}
+
+.glide__slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glides__arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .glide__slides {
+        display: block;
+    }
+}
