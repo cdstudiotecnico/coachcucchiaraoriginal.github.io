@@ -4605,10 +4605,9 @@ html {
   justify-content: center;
 }
 
-
 /* Mobile - Sposta il bottone "La Maglia del Team" più in alto */
 @media (max-width: 768px) {
   .s-intro__btn-download {
-    margin-top: -20px !important;  /* Forza il margine a essere negativo */
+    transform: translateY(-20px);  /* Sposta il bottone in alto */
   }
 }
