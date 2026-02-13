@@ -4819,4 +4819,97 @@ html, body {
         padding-bottom: 60px;
     }
 
+    /* ==================================================
+   MOBILE HARD FIX – HERO COMPLETAMENTE RISCRITTA
+================================================== */
+
+@media screen and (max-width: 430px) {
+
+    /* Stop layout complesso del template */
+    .s-intro .grid-block,
+    .s-intro .grid-16,
+    .s-intro .column {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    /* HERO CONTAINER */
+    .s-intro {
+        position: relative;
+        min-height: 100vh;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Immagine background */
+    .s-intro__content-media {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
+
+    .s-intro__content-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Overlay scuro per leggibilità */
+    .s-intro::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.45);
+        z-index: -1;
+    }
+
+    /* TESTO HERO */
+    .s-intro__content-inner {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .s-intro__content-title {
+        font-size: 34px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .s-intro__content-pretitle {
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+
+    /* BOTTONI */
+    .s-intro__content-btns {
+        width: 100%;
+    }
+
+    .s-intro__content-btns .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 16px;
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    /* SOCIAL – tolgo posizionamento assoluto */
+    .s-intro__social {
+        position: relative !important;
+        bottom: auto !important;
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+    /* Scroll icon */
+    .s-intro__scroll-down {
+        display: none;
+    }
+
+}
 }
