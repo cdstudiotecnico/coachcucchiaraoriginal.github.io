@@ -2,180 +2,231 @@
 <html lang="it">
 
 <head>
-    <!-- Meta tags e altre configurazioni -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Galleria - Running Coach | Coach Cucchiara</title>
-    <meta name="description" content="Gallery delle gare e dei viaggi del Coach Dario Cucchiara. Scopri la mia esperienza nelle gare più importanti in Europa e in Italia.">
-    
-    <link rel="icon" href="assets/img/favicon-32.png" type="image/png">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TDC4FVDX');</script>
+  <!-- End Google Tag Manager -->
 
-    <style>
-        body {
-            background: #f9f9f9;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        .page-wrapper {
-            background: #fff;
-            border-radius: 15px;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 30px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-        }
+  <!-- Titolo e Descrizione -->
+  <title>Galleria – Gare e Viaggio | Dario Cucchiara</title>
+  <meta name="description" content="Galleria delle gare, eventi e momenti di viaggio vissuti da Dario Cucchiara con la sua famiglia e la passione per la corsa.">
+  <meta name="author" content="Dario Cucchiara">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="gare, running, viaggio, famiglia, eventi, foto, running coach">
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 25px;
-        }
+  <link rel="canonical" href="https://www.cdstudiotecnico.it/galleria.html">
 
-        .section-title h2 {
-            font-size: 2rem;
-            color: #356c6c;
-        }
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-        .swiper {
-            max-width: 100%;
-            margin: 0 auto;
-            position: relative;
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-        }
+  <!-- Fonts e CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 
-        .swiper-slide img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto;
-        }
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-        .caption {
-            text-align: center;
-            padding: 8px 12px;
-            background: rgba(255, 255, 255, 0.8);
-            font-size: 1rem;
-            color: #444;
-            font-style: italic;
-        }
+    /* Contenitore principale */
+    .page-wrapper {
+      background: #fff;
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+    }
 
-        .swiper-pagination {
-            bottom: 0;
-            margin-top: 5px;
-        }
+    /* Titolo della galleria */
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-        .swiper-pagination-bullet {
-            background: #356c6c;
-            opacity: 0.5;
-        }
+    .section-title h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #356c6c;
+      margin-bottom: 10px;
+    }
 
-        .swiper-button-prev, .swiper-button-next {
-            color: #356c6c;
-        }
+    .section-title p {
+      font-size: 1rem;
+      color: #555;
+    }
 
-        .back-btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 12px 30px;
-            background-color: #356c6c;
-            color: white;
-            border-radius: 30px;
-            text-decoration: none;
-            text-align: center;
-            font-weight: 600;
-            transition: background-color 0.3s;
-        }
+    /* Swiper - Galleria */
+    .swiper {
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
 
-        .back-btn:hover {
-            background-color: #2a5656;
-        }
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.5s ease-in-out;
+    }
 
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .swiper-slide img {
-                height: 260px;
-                object-fit: contain;
-            }
+    .swiper-slide img:hover {
+      transform: scale(1.05);
+    }
 
-            .page-wrapper {
-                padding: 25px;
-                margin: 50px 15px;
-            }
-        }
-    </style>
+    .caption {
+      background: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding: 10px;
+      font-size: 1rem;
+      color: #444;
+      font-style: italic;
+      border-top: 1px solid #eee;
+    }
+
+    /* Paginazione e frecce */
+    .swiper-pagination {
+      bottom: 10px;
+      margin-top: 5px;
+    }
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: #356c6c;
+      opacity: 0.6;
+      transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #2a5656;
+      opacity: 1;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      color: #fff;
+      background: rgba(53, 108, 108, 0.8);
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+    }
+
+    .swiper-button-prev:hover, .swiper-button-next:hover {
+      background: #2a5656;
+    }
+
+    /* Bottone per tornare alla home */
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #356c6c;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #2a5656;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .swiper-slide img {
+        height: 250px;
+      }
+
+      .page-wrapper {
+        padding: 20px;
+        margin: 40px 10px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
 
-    <!-- Close button per tornare alla homepage -->
-    <a href="index.html" class="back-btn">← Torna alla Home</a>
+  <!-- Google Tag Manager noscript -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDC4FVDX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
 
-    <div class="page-wrapper" data-aos="fade-up">
+  <!-- Contenuto della pagina -->
+  <div class="page-wrapper" data-aos="fade-up">
 
-        <!-- Titolo della sezione -->
-        <div class="section-title">
-            <h2>Le Gare & Viaggio del Coach</h2>
-            <p>Un viaggio tra le mie gare, da Lisbona a Copenaghen, passando per le città italiane. Un percorso di allenamento, disciplina e passione.</p>
-        </div>
-
-        <!-- Swiper gallery per le immagini -->
-        <div class="swiper parcoSwiper">
-            <div class="swiper-wrapper">
-                <!-- Immagine 1 -->
-                <div class="swiper-slide">
-                    <img src="assets/img/gare/lisbona.jpg" alt="Lisbona">
-                    <div class="caption">Lisbona 2025 – Mezza Maratona, 1h13'04", primo italiano, top 40 assoluti.</div>
-                </div>
-                <!-- Immagine 2 -->
-                <div class="swiper-slide">
-                    <img src="assets/img/gare/copenaghen.jpg" alt="Copenaghen">
-                    <div class="caption">Copenaghen – Half Marathon, ritmo e disciplina europei.</div>
-                </div>
-                <!-- Immagine 3 -->
-                <div class="swiper-slide">
-                    <img src="assets/img/gare/napoli.jpg" alt="Napoli">
-                    <div class="caption">Napoli 2024 – Una corsa che mi ha emozionato e motivato.</div>
-                </div>
-            </div>
-
-            <!-- Swiper navigation buttons and pagination -->
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
+    <div class="section-title">
+      <img src="assets/img/logo.png" alt="Logo">
+      <h2>Galleria Gare & Viaggio</h2>
+      <p>Segui il mio viaggio e le gare che ho corso in Europa e Italia, unendo passione, famiglia e sport.</p>
     </div>
 
-    <!-- JS libraries -->
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script>
-        // Initialize Swiper for the gallery
-        var swiper = new Swiper('.parcoSwiper', {
-            loop: true,
-            effect: 'fade',
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            speed: 900,
-        });
-    </script>
+    <!-- Galleria (Swiper) -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/img/portfolio/gara1.jpg" alt="Gara 1">
+          <div class="caption">Maratona di Roma, un'esperienza unica di sport e storia.</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/portfolio/gara2.jpg" alt="Gara 2">
+          <div class="caption">UltraTrail di Cortina, dove la fatica incontra la bellezza.</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/portfolio/gara3.jpg" alt="Gara 3">
+          <div class="caption">La marcia verso la cima, un sogno che diventa realtà.</div>
+        </div>
+      </div>
+
+      <!-- Navigazione e Paginazione -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Pulsante per tornare alla home -->
+    <div class="text-center">
+      <a href="index.html" class="back-btn">← Torna alla Home</a>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      effect: 'fade',
+      autoplay: { delay: 3500, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      speed: 700,
+    });
+  </script>
+
 </body>
 
 </html>
