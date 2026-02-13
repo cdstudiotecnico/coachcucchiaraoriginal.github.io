@@ -4554,3 +4554,128 @@ html {
     border-bottom: 1px solid #ffffff;
 }
 
+/* ==================================================
+GALLERY UNIFORME — PROPORZIONI PREMIUM
+================================================== */
+
+.folio-entries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .folio-entries {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .folio-entries {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Card struttura */
+.entry {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #000;
+}
+
+/* THUMB UNIFORME */
+.entry__thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5; /* PROPORZIONE ELEGANTE */
+    overflow: hidden;
+}
+
+/* IMMAGINI PERFETTE */
+.entry__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* RIEMPIMENTO SENZA DISTORSIONE */
+    transition: transform 0.5s ease;
+}
+
+/* Effetto hover elegante */
+.entry:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay più raffinato */
+.entry__info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: #fff;
+}
+
+/* Titoli */
+.entry__title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.entry__cat {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* ==================================================
+SEZIONE NUMERI PIÙ PULITA
+================================================== */
+
+.counter-items__item .num {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.counter-items__item h5 {
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.counter-items__item p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* ==================================================
+VIDEO PREMIUM STYLE
+================================================== */
+
+video {
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* ==================================================
+SEZIONI PIÙ ARIOSE
+================================================== */
+
+.s-works,
+.s-about,
+.s-numbers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .s-works,
+    .s-about,
+    .s-numbers {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
