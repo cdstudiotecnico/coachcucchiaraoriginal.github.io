@@ -550,7 +550,30 @@ showImage(currentIndex);
 
 </script>
 
+    <script>
+    // Ottieni il bottone "Back to Top"
+    var goTopButton = document.querySelector('.ss-go-top');
+
+    // Funzione per mostrare il bottone solo quando scorro verso il basso
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            goTopButton.style.display = "block"; // Mostra il bottone
+        } else {
+            goTopButton.style.display = "none"; // Nascondi il bottone quando sono in cima
+        }
+    };
+
+    // Per quando clicchi sul bottone
+    goTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,  // Torna in cima alla pagina
+            behavior: 'smooth'  // Scrolla in modo fluido
+        });
+    });
+</script>
+
 
 </body>
 
 </html>
+
