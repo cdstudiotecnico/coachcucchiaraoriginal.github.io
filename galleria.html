@@ -16,7 +16,7 @@
   <title>Galleria – Gare & Viaggio | Dario Cucchiara</title>
 
   <!-- Font del tuo sito -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -24,8 +24,8 @@
   <style>
     body {
       margin: 0;
-      background: #0f0f0f;
-      font-family: 'Cormorant Garamond', serif;
+      background: #0a0a0a;
+      font-family: 'Poppins', sans-serif;
       color: #ffffff;
     }
 
@@ -38,91 +38,90 @@
     }
 
     h1 {
-      font-weight: 500;
-      font-size: 2.5rem;
+      font-weight: 600;
+      font-size: 3rem;
       margin-bottom: 15px;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
+      color: #fff;
     }
 
     .subtitle {
-      opacity: 0.7;
+      opacity: 0.8;
       margin-bottom: 50px;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      color: #bbb;
     }
 
     /* RIQUADRO SLIDER */
     .swiper {
       width: 100%;
       max-width: 800px;
-      border-radius: 12px;
+      border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
     }
 
-.swiper-slide img {
-  width: 100%;
-  height: 100%;  /* Occupa tutta l'altezza */
-  object-fit: contain;  /* Adatta l'immagine al contenitore mantenendo le proporzioni */
-  display: block;
-  border-radius: 8px;
-}
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 15px;
+    }
 
     /* DIDASCALIA */
     .caption {
-      background: #111;
+      background: rgba(0, 0, 0, 0.7);
       padding: 20px;
-      font-size: 1rem;
+      font-size: 1.1rem;
       letter-spacing: 0.5px;
+      font-style: italic;
+      color: #fff;
     }
 
     /* FRECCE */
     .swiper-button-next,
     .swiper-button-prev {
       color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      padding: 15px;
+      transition: background 0.3s ease;
     }
 
-    /* PAGINATION */
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background-color: #2a5656;
+    }
+
+    /* PAGINAZIONE */
     .swiper-pagination-bullet {
-      background: #ffffff;
-      opacity: 0.4;
-    }
-
-    .swiper-pagination-bullet-active {
-      opacity: 1;
-    }
-
-    /* PAGINAZIONE: Pallini più belli e posizionati più in basso */
-    .swiper-pagination {
-      position: relative;
-      bottom: -20px;  /* Abbassa i pallini un po' rispetto alla didascalia */
-      margin-top: 10px;
-      z-index: 10; /* Per tenerli sopra le immagini */
-    }
-
-    .swiper-pagination-bullet {
+      background: #356c6c;
+      opacity: 0.5;
+      transition: all 0.3s ease;
+      border-radius: 50%;
       width: 16px;
       height: 16px;
-      background-color: #356c6c; /* Colore del pallino */
-      border-radius: 50%;
-      opacity: 0.6;
-      transition: all 0.3s ease;
     }
 
     .swiper-pagination-bullet-active {
-      background-color: #2a5656; /* Colore del pallino attivo */
+      background-color: #2a5656;
       opacity: 1;
-      transform: scale(1.2); /* Pallino più grande quando attivo */
+      transform: scale(1.3);
     }
 
-    /* Animazione dei pallini al passaggio del mouse */
     .swiper-pagination-bullet:hover {
-      transform: scale(1.3);  /* Un po' più grande al passaggio del mouse */
-      background-color: #2a5656; /* Colore scuro quando si passa sopra */
+      background-color: #2a5656;
+      opacity: 0.8;
+      transform: scale(1.4);
     }
 
-    /* Ottimizzazione per il contrasto dei pallini su sfondo chiaro */
-    .swiper-pagination-bullet {
-      box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Aggiungi un po' di ombra ai pallini */
+    /* PAGINAZIONE - Posizionamento e ombra */
+    .swiper-pagination {
+      position: relative;
+      bottom: -20px;
+      margin-top: 10px;
+      z-index: 10;
     }
 
     /* BOTTONE STILE TUO */
@@ -130,23 +129,29 @@
       display: inline-block;
       margin-top: 50px;
       padding: 12px 40px;
-      border: 1px solid #ffffff;
+      border: 2px solid #ffffff;
       color: #ffffff;
       text-decoration: none;
       letter-spacing: 1px;
-      font-size: 0.9rem;
+      font-size: 1rem;
       transition: 0.3s ease;
+      border-radius: 30px;
+      text-transform: uppercase;
     }
 
     .home-btn:hover {
       background: #ffffff;
       color: #000000;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
 
     /* MOBILE */
     @media(max-width:768px){
       .swiper-slide img{
         height: 350px;
+      }
+      h1 {
+        font-size: 2rem;
       }
     }
 
