@@ -4539,18 +4539,18 @@ html {
     margin-top: 25px;
     text-align: center;
     font-size: 14px;
-    color: #555;
+    color: #ddd; /* testo più chiaro */
 }
 
 .coach-location a {
     margin-left: 5px;
     text-decoration: none;
-    border-bottom: 1px solid #111;
-    color: #111;
+    border-bottom: 1px solid #00c3ff; /* colore visibile */
+    color: #00c3ff; /* azzurro brillante */
     padding-bottom: 2px;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .coach-location a:hover {
-    opacity: 0.6;
+    opacity: 0.8;
 }
