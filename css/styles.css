@@ -4598,3 +4598,66 @@ html {
 .s-works:hover .prev, .s-works:hover .next {
     display: block;  /* Appare solo quando il mouse passa sopra */
 }
+
+    /* ==================================================
+   Galleria scorrevole con immagini adattate
+================================================== */
+
+/* Contenitore della galleria */
+.s-works .folio-entries {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+/* Riquadro delle immagini: adattare al contenitore */
+.entry {
+    flex: 0 0 auto;
+    width: 300px; /* Larghezza fissa per ogni immagine */
+    height: 200px; /* Altezza uniforme per tutte le immagini */
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Adattamento delle immagini al riquadro senza distorsioni */
+.entry__thumb img {
+    object-fit: cover;  /* Mantiene le proporzioni senza deformare */
+    width: 100%;        /* Adatta la larghezza al 100% del contenitore */
+    height: 100%;       /* Adatta l'altezza al 100% del contenitore */
+    border-radius: 8px;
+}
+
+/* Aggiungere le frecce di navigazione per il cambio delle immagini */
+.s-works .prev, .s-works .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.s-works .prev {
+    left: 0;
+}
+
+.s-works .next {
+    right: 0;
+}
+
+/* Nascondi le frecce finché non si passa sopra con il mouse */
+.s-works .prev, .s-works .next {
+    display: none;
+}
+
+.s-works:hover .prev, .s-works:hover .next {
+    display: block;  /* Mostra le frecce solo al passaggio del mouse */
+}
+
