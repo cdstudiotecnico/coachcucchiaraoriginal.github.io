@@ -365,188 +365,132 @@ NUMERI (grandi)
 <!-- ==================================================
 GALLERY GARE (placeholder foto + descrizioni glightbox)
 ================================================== -->
-<section id="gallery" class="s-works target-section">
-    <div class="row">
-        <div class="column xl-12">
-            <div class="section-header" data-num="03">
-                <h2 class="text-display-title">Gare & Viaggio.</h2>
+<section id="gallery" class="auto-gallery">
+    <div class="auto-track">
+        <!-- FOTO 1: Cross -->
+        <div class="gallery-item">
+            <a href="images/Cross.jpg" class="entry__link glightbox" data-glightbox="title: Cross; description: .desc-cross">
+                <img src="images/Cross.jpg" alt="Cross" class="img-responsive">
+            </a>
+            <div class="glightbox-desc desc-cross">
+                Gara di cross, una sfida che mette alla prova resistenza e strategia.
             </div>
-            <p class="attention-getter">
-                Seguo da anni il circuito europeo <strong>SuperHalfs</strong>.
-                Ogni città è una prova, ogni gara una lezione.
-            </p>
         </div>
+
+        <!-- FOTO 2: Pista -->
+        <div class="gallery-item">
+            <a href="images/pista.jpg" class="entry__link glightbox" data-glightbox="title: Pista; description: .desc-pista">
+                <img src="images/pista.jpg" alt="Pista" class="img-responsive">
+            </a>
+            <div class="glightbox-desc desc-pista">
+                Gare di velocità, dove ogni frazione di secondo conta.
+            </div>
+        </div>
+
+        <!-- FOTO 3: Europei1 -->
+        <div class="gallery-item">
+            <a href="images/Europei1.JPG" class="entry__link glightbox" data-glightbox="title: Europei 1; description: .desc-europei1">
+                <img src="images/Europei1.JPG" alt="Europei 1" class="img-responsive">
+            </a>
+            <div class="glightbox-desc desc-europei1">
+                L'emozione di gareggiare nei campionati europei.
+            </div>
+        </div>
+
+        <!-- FOTO 4: mioallenatoretommaso -->
+        <div class="gallery-item">
+            <a href="images/mioallenatoretommaso.jpg" class="entry__link glightbox" data-glightbox="title: Mio allenatore Tommaso; description: .desc-tommaso">
+                <img src="images/mioallenatoretommaso.jpg" alt="Mio allenatore Tommaso" class="img-responsive">
+            </a>
+            <div class="glightbox-desc desc-tommaso">
+                Il mio allenatore Tommaso, sempre un passo avanti.
+            </div>
+        </div>
+
+        <!-- FOTO 5: miopadre -->
+        <div class="gallery-item">
+            <a href="images/miopadre.jpg" class="entry__link glightbox" data-glightbox="title: Mio padre; description: .desc-mio-padre">
+                <img src="images/miopadre.jpg" alt="Mio padre" class="img-responsive">
+            </a>
+            <div class="glightbox-desc desc-mio-padre">
+                L'influenza di mio padre nella mia crescita sportiva.
+            </div>
+        </div>
+
+        <!-- FOTO 6: Lisbona -->
+        <div class="gallery-item">
+            <a href="images/Lisbona.jpg" class="entry__link glightbox" data-glightbox="title: Lisbona; description: .desc-lisbona">
+                <img src="images/Lisbona.jpg" alt="Lisbona" class="img-responsive">
+            </a>
+            <div class="glightbox-desc desc-lisbona">
+                Mezza Maratona di Lisbona 2025.
+            </div>
+        </div>
+
+        <!-- FOTO 7: Valencia -->
+        <div class="gallery-item">
+            <a href="images/Valencia.jpg" class="entry__link glightbox" data-glightbox="title: Valencia; description: .desc-valencia">
+                <img src="images/Valencia.jpg" alt="Valencia" class="img-responsive">
+            </a>
+            <div class="glightbox-desc desc-valencia">
+                Una delle mezze più veloci d’Europa.
+            </div>
+        </div>
+
+        <!-- FOTO 8: Praga -->
+        <div class="gallery-item">
+            <a href="images/Praga1.JPG" class="entry__link glightbox" data-glightbox="title: Praga; description: .desc-praga">
+                <img src="images/Praga1.JPG" alt="Praga" class="img-responsive">
+            </a>
+            <div class="glightbox-desc desc-praga">
+                Silenzio, ascolto, controllo del passo.
+            </div>
+        </div>
+
+        <!-- VIDEO 1: videonapoli1 -->
+        <div class="gallery-item">
+            <video width="100%" controls class="responsive-video">
+                <source src="images/videonapoli1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- VIDEO 2: videonapoli2 -->
+        <div class="gallery-item">
+            <video width="100%" controls class="responsive-video">
+                <source src="images/videonapoli2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Duplicate per loop infinito -->
+        <div class="gallery-item"><img src="images/Lisbona.jpg" alt="Lisbona"></div>
+        <div class="gallery-item"><img src="images/Valencia.jpg" alt="Valencia"></div>
     </div>
-
-    <!-- Carosello delle immagini -->
-    <div class="glide" id="carousel">
-        <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-                <!-- FOTO 1: Cross -->
-                <li class="glide__slide">
-                    <a href="images/Cross.jpg" class="entry__link glightbox" data-glightbox="title: Cross; description: .desc-cross">
-                        <div class="entry__thumb">
-                            <img src="images/Cross.jpg" alt="Cross" class="img-responsive">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Cross</h4>
-                            <div class="entry__cat">Trail Run</div>
-                        </div>
-                    </a>
-                    <div class="glightbox-desc desc-cross">
-                        Gara di cross, una sfida che mette alla prova resistenza e strategia.
-                    </div>
-                </li>
-
-                <!-- FOTO 2: Pista -->
-                <li class="glide__slide">
-                    <a href="images/pista.jpg" class="entry__link glightbox" data-glightbox="title: Pista; description: .desc-pista">
-                        <div class="entry__thumb">
-                            <img src="images/pista.jpg" alt="Pista" class="img-responsive">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Pista</h4>
-                            <div class="entry__cat">Velocità e Tecnica</div>
-                        </div>
-                    </a>
-                    <div class="glightbox-desc desc-pista">
-                        Gare di velocità, dove ogni frazione di secondo conta.
-                    </div>
-                </li>
-
-                <!-- FOTO 3: Europei1 -->
-                <li class="glide__slide">
-                    <a href="images/Europei1.JPG" class="entry__link glightbox" data-glightbox="title: Europei 1; description: .desc-europei1">
-                        <div class="entry__thumb">
-                            <img src="images/Europei1.JPG" alt="Europei 1" class="img-responsive">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Europei 1</h4>
-                            <div class="entry__cat">Campionati Europei</div>
-                        </div>
-                    </a>
-                    <div class="glightbox-desc desc-europei1">
-                        L'emozione di gareggiare nei campionati europei.
-                    </div>
-                </li>
-
-                <!-- FOTO 4: mioallenatoretommaso -->
-                <li class="glide__slide">
-                    <a href="images/mioallenatoretommaso.jpg" class="entry__link glightbox" data-glightbox="title: Mio allenatore Tommaso; description: .desc-tommaso">
-                        <div class="entry__thumb">
-                            <img src="images/mioallenatoretommaso.jpg" alt="Mio allenatore Tommaso" class="img-responsive">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Mio allenatore Tommaso</h4>
-                            <div class="entry__cat">Mentore e Guida</div>
-                        </div>
-                    </a>
-                    <div class="glightbox-desc desc-tommaso">
-                        Il mio allenatore Tommaso, sempre un passo avanti.
-                    </div>
-                </li>
-
-                <!-- FOTO 5: miopadre -->
-                <li class="glide__slide">
-                    <a href="images/miopadre.jpg" class="entry__link glightbox" data-glightbox="title: Mio padre; description: .desc-mio-padre">
-                        <div class="entry__thumb">
-                            <img src="images/miopadre.jpg" alt="Mio padre" class="img-responsive">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Mio padre</h4>
-                            <div class="entry__cat">Ispirazione</div>
-                        </div>
-                    </a>
-                    <div class="glightbox-desc desc-mio-padre">
-                        L'influenza di mio padre nella mia crescita sportiva.
-                    </div>
-                </li>
-
-                <!-- Aggiungere altre foto con lo stesso formato -->
-
-                <!-- VIDEO 1: videonapoli1 -->
-                <li class="glide__slide">
-                    <video width="100%" controls class="responsive-video">
-                        <source src="images/videonapoli1.mp4" type="video/mp4">
-                    </video>
-                </li>
-
-                <!-- VIDEO 2: videonapoli2 -->
-                <li class="glide__slide">
-                    <video width="100%" controls class="responsive-video">
-                        <source src="images/videonapoli2.mp4" type="video/mp4">
-                    </video>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Controlli carosello -->
-        <div data-glide-el="controls" class="glide__controls">
-            <button data-glide-dir="<" class="glide__arrow glide__arrow--left">‹</button>
-            <button data-glide-dir=">" class="glide__arrow glide__arrow--right">›</button>
-        </div>
-    </div>
-
 </section>
 
 <!-- ==================================================
 AURORA
 ================================================== -->
-<section id="aurora" class="s-about target-section">
-
-    <div class="row">
-        <div class="column xl-12">
-            <div class="section-header" data-num="04">
-                <h2 class="text-display-title">Aurora.</h2>
-            </div>
-
-            <p class="attention-getter">
-                Correre è personale.  
-                Ma ciò che lasci è per sempre.
-            </p>
-
-            <p>
-                Aurora è mia figlia. Ha quattro anni...
-            </p>
-
-        </div>
-    </div>
-
-    <div class="row folio-entries">
+<section id="aurora" class="auto-gallery">
+    <div class="auto-track">
         <!-- Immagini con Aurora -->
-        <div class="column entry">
+        <div class="gallery-item">
             <a href="images/famiglia/cross-aurora.jpg" class="entry__link glightbox" data-glightbox="title: Cross con Aurora; description: .desc-aurora-cross">
-                <div class="entry__thumb">
-                    <img src="images/famiglia/cross-aurora.jpg" alt="Cross con Aurora" class="img-responsive">
-                </div>
-                <div class="entry__info">
-                    <h4 class="entry__title">Cross con Aurora</h4>
-                    <div class="entry__cat">Famiglia & Disciplina</div>
-                </div>
+                <img src="images/famiglia/cross-aurora.jpg" alt="Cross con Aurora" class="img-responsive">
             </a>
             <div class="glightbox-desc desc-aurora-cross">
                 Ogni traguardo condiviso vale il doppio.
             </div>
         </div>
 
-        <!-- Altre foto con Aurora -->
-        <div class="column entry">
+        <div class="gallery-item">
             <a href="images/famiglia/napoli-aurora.jpg" class="entry__link glightbox" data-glightbox="title: Napoli con Aurora; description: .desc-aurora-napoli">
-                <div class="entry__thumb">
-                    <img src="images/famiglia/napoli-aurora.jpg" alt="Napoli con Aurora" class="img-responsive">
-                </div>
-                <div class="entry__info">
-                    <h4 class="entry__title">Napoli con Aurora</h4>
-                    <div class="entry__cat">Silence. Run.</div>
-                </div>
+                <img src="images/famiglia/napoli-aurora.jpg" alt="Napoli con Aurora" class="img-responsive">
             </a>
             <div class="glightbox-desc desc-aurora-napoli">
                 Correre è personale. L’amore è universale.
             </div>
         </div>
-
     </div>
-
 </section>
 
 <!-- ==================================================
@@ -780,6 +724,7 @@ PROSSIMA GARA (aggiornabile)
 </body>
 
 </html>
+
 
 
 
