@@ -4577,13 +4577,13 @@ html {
     transform: scale(1.02); /* Un po' più piccolo quando cliccato */
 }
 
-    .ss-go-top {
+.ss-go-top {
     position: fixed;
     bottom: 20px; /* Distanza dal fondo */
     right: 20px;  /* Distanza dalla destra */
-    display: none; /* Nascondi il tasto inizialmente */
+    display: none; /* Nascondi il tasto all'inizio */
     z-index: 1000; /* Assicurati che il tasto sia sopra altri contenuti */
-    cursor: pointer; /* Aggiungi il puntatore del mouse quando ci passi sopra */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
     background-color: rgba(0, 0, 0, 0.5); /* Sfondo semitrasparente */
     border-radius: 50%;
     padding: 10px;
@@ -4598,4 +4598,5 @@ html {
 .ss-go-top:hover {
     background-color: rgba(0, 0, 0, 0.8); /* Cambio colore quando si passa sopra */
 }
+
 
