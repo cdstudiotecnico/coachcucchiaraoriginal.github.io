@@ -4606,11 +4606,9 @@ html {
   justify-content: center;
 }
 
-.s-intro__subtitle {
-    color: #ffffff;
+..s-intro__subtitle {
+    color: rgba(255,255,255,0.85);
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: 1px;
-    margin-top: 25px;
-    opacity: 0.9;
+    letter-spacing: 2px;
 }
