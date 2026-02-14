@@ -4608,7 +4608,7 @@ html {
 
 .s-intro__subtitle {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 300;
     letter-spacing: 1px;
     margin-top: 25px;
@@ -4618,8 +4618,8 @@ html {
 .fade-in-delayed {
     opacity: 0;
     transform: translateY(10px);
-    animation: fadeUp 1s ease forwards;
-    animation-delay: 1.5s;
+    animation: fadeUp 2s ease forwards;
+    animation-delay: 3s;
 }
 
 @keyframes fadeUp {
